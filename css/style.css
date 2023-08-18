@@ -76,6 +76,7 @@ body{
     top: 0;
     right: 0;
     width: 100%;
+    height: 60px;
     background: rgba(0, 0, 0, .75);
 }
 
@@ -115,6 +116,41 @@ body{
 }
 .hamburger-btn span:hover{
     cursor: pointer;
+}
+
+.hamburger-menu{
+    display: none;
+}
+
+
+
+
+.active .hamburger-menu{
+    display: block;
+    background: rgba(0, 0, 0, .9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    width: auto;
+    padding-top: 60px;
+    text-align: center;
+}
+.hamburger-menu a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 15px 0;
+}
+.hamburger-menu .material-symbols-outlined{
+    text-align: right;
+    padding-right: 30px;
+}
+.hamburger-menu li{
+    border-bottom: 1px solid white;
 }
 
 @media(max-width:480px){
@@ -218,6 +254,17 @@ body{
     padding-left: 12px;
 }
 
+@media(max-width:480px){
+    .footer .about{
+        display: none;
+    }
+    .footer .contact,
+    .footer .social{
+    width: 50%;
+    margin: 0 1%;
+}
+}
+
 /**********************************
 *
 ***********以上為layout************
@@ -269,7 +316,7 @@ body{
     }
 }
 
-
+/**秘訣內文**/
 .secret-detail li img{
     border-radius: 50%;
 }
@@ -277,11 +324,12 @@ body{
 .secret-detail{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding-top: 30px;
 }
 
 .secret-detail li{
-    width: 30.333%;
+    width: 27.333%;
     margin: 0 3%;
     text-align: center;
 }
@@ -297,6 +345,13 @@ body{
 .secret-detail p{
     text-align: left;
     line-height: 1.2;
+}
+@media(max-width:480px){
+
+    .secret-detail li{
+        width: 60%;
+        margin: 5%;
+    }
 }
 
 /**以下主廚***/
@@ -328,6 +383,18 @@ body{
 }
 .chef-detail p{
     line-height: 1.5;
+}
+
+@media(max-width:480px){
+    .chef-info{
+        flex-wrap: wrap;
+    }
+    .chef-pic{
+        padding-top: 50px;
+    }
+    .chef-detail{
+        padding: 20px 20px;
+    }
 }
 
 
@@ -386,6 +453,17 @@ body{
     opacity: .8;
 }
 
+@media (max-width:480px){
+    .opinion-list{
+        flex-wrap: wrap;
+    }
+    .opinion-list li{
+        width: 50%;
+        margin: 25px 2%;
+        flex-wrap: wrap;
+    }
+}
+
 /***以下為訂位***/
 
 .booking{
@@ -414,7 +492,6 @@ body{
     width: 48%;
     margin: 2%;
 }
-
 
 /**以下訂位表單**/
 
@@ -478,6 +555,19 @@ body{
 .booking-form-btn button[type="reset"]{
     background: rgba(0, 0, 0, .35);
 }
+@media (max-width:480px){
+    .booking-detail{
+        flex-wrap: wrap-reverse;
+    }
+    .map-pic,
+    .booking-form{
+    width: 95%;
+    margin: 5%;
+}
+}
+
+
+
 
 /**********************************
 *
