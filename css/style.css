@@ -61,6 +61,9 @@ body{
         left: 10%;
         right: 10%;
     }
+}
+
+@media(max-width:480px){
     .banner{
         background-image: url(../images/header_mobile.png);
     }
@@ -107,6 +110,8 @@ body{
     border-bottom: 8px solid #EFE9E7;
 }
 
+
+/***以下漢堡選單***/
 .hamburger-btn{
     display: none;
 }
@@ -120,22 +125,21 @@ body{
 
 .hamburger-menu{
     display: none;
-}
-
-
-
-
-.active .hamburger-menu{
-    display: block;
     background: rgba(0, 0, 0, .9);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: 40%;
     width: auto;
     padding-top: 60px;
     text-align: center;
+}
+
+
+.active .hamburger-menu{
+    display: block;
+    height: 40%;
+
 }
 .hamburger-menu a{
     display: block;
@@ -165,7 +169,7 @@ body{
 
 }
 
-
+/**以上漢堡選單**/
 
 
 .logo{
@@ -218,6 +222,7 @@ body{
 .footer .contact a{
     text-decoration: none;
     color: #3d1101;
+    white-space: nowrap;
 }
 
 .footer .contact a:hover{
@@ -253,6 +258,7 @@ body{
 .social-icons li{
     padding-left: 12px;
 }
+
 
 @media(max-width:480px){
     .footer .about{
