@@ -124,21 +124,25 @@ body{
 }
 
 .hamburger-menu{
-    display: none;
+    display: block;
+
+    max-height: 0px;
+    overflow: hidden;
+
     background: rgba(0, 0, 0, .9);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     width: auto;
-    padding-top: 60px;
+    transition: all .3s;
     text-align: center;
 }
 
 
 .active .hamburger-menu{
-    display: block;
-    height: 40%;
+    padding-top: 60px;
+    max-height: 40%;
 
 }
 .hamburger-menu a{
@@ -149,10 +153,7 @@ body{
     font-weight: 700;
     padding: 15px 0;
 }
-.hamburger-menu .material-symbols-outlined{
-    text-align: right;
-    padding-right: 30px;
-}
+
 .hamburger-menu li{
     border-bottom: 1px solid white;
 }
@@ -165,6 +166,7 @@ body{
         display: block;
         color: white;
         padding: 0 16px;
+        z-index: 100;
     }
 
 }
